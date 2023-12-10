@@ -1,0 +1,929 @@
+html {
+  font-size: 16px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-transform: capitalize;
+  font-family: "Poppins", sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+h2 {
+  text-align: center;
+  padding: 0 2rem 2rem 2rem;
+}
+
+#home,
+#Aboutme,
+#services,
+#summary,
+#portfolio,
+#testimonial,
+#contact {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  margin: auto;
+}
+
+#services,
+#portfolio,
+#contact {
+  background-color: #f8f9fa;
+}
+.aboutmehead,
+.serhead,
+.sumhead,
+.portfolio,
+.testhead,
+.conthead {
+  padding: 1.5rem 0rem;
+}
+
+/****************************/
+/********* navbar ***********/
+/****************************/
+
+#navbar {
+  width: 100%;
+  z-index: 99;
+  margin: auto;
+  display: flex;
+  color: white;
+  position: fixed;
+  padding: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+#navbar a {
+  color: white;
+}
+
+#navbar ul {
+  display: flex;
+  list-style-type: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar ul li a {
+  color: inherit;
+  padding-right: 1.5rem;
+  transition: 0.5s ease all;
+}
+
+#navbar ul li a:hover {
+  color: #20c997;
+}
+
+/****************************/
+/*********** home ***********/
+/****************************/
+
+#home {
+  width: 100%;
+  height: 100vh;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  position: relative;
+  background-image: url(Images/intro-bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+#home h1 {
+  animation: typing 10s infinite;
+}
+
+.homecontent h3 {
+  font-size: 2rem;
+}
+
+.homelayer {
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  background-color: #11141892;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homecontent {
+  /* font-size: 2rem; */
+  padding: 1rem;
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.homecontent h3,
+h1,
+p {
+  padding: 1rem;
+}
+
+.homecontent a {
+  color: #20c997;
+  transition: 0.9s ease all;
+  padding: 0.5rem 2rem;
+  border-radius: 10rem;
+  transition: 0.9s ease all;
+  background-color: transparent;
+  border: #20c997 solid 0.1rem;
+}
+
+.homecontent a:hover {
+  color: white;
+  cursor: pointer;
+  background-color: #20c997;
+}
+
+.homecontent button {
+  background-color: transparent;
+  border: 0;
+}
+
+.settings {
+  z-index: 90;
+  position: fixed;
+  right: 0;
+  width: 5rem;
+}
+
+.settings button {
+  color: white;
+  padding: 0.5rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: 0;
+  background-color: #555;
+}
+
+/* ------------------------ */
+/* Aboutme */
+/* ------------------------ */
+
+#Aboutme {
+  margin: auto;
+  /* width: 90%; */
+  /* text-align: center !important; */
+}
+
+.aboutmehead {
+  text-align: center;
+}
+
+.abouthead1 {
+  opacity: 0.1;
+  font-size: 7rem;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(47%, -30%);
+}
+
+.abouthead2 {
+  position: relative;
+}
+
+.me12 {
+  width: 90%;
+  display: flex;
+  justify-content: space-around;
+  text-align: left;
+}
+
+.me1 {
+  padding: 3rem;
+}
+
+.me1 h2 {
+  text-align: left;
+  padding: 1rem;
+}
+
+.me1 span {
+  color: #20c997;
+}
+
+.me2 {
+  padding: 3rem;
+  width: 60rem;
+}
+
+.me2 li {
+  list-style-type: none;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.me2 a {
+  color: #20c997;
+  transition: 0.2s ease-in-out all;
+}
+
+.me2 a:hover {
+  color: #1b9f78;
+}
+
+.me2 button {
+  border: 0;
+  padding: 1rem 3rem;
+  color: white;
+  cursor: pointer;
+  margin-top: 1rem;
+  border-radius: 5rem;
+  background-color: #20c997;
+}
+
+.me3 {
+  display: flex;
+}
+
+.menum {
+  width: 25%;
+  padding: 4.4rem;
+  text-align: center;
+}
+
+.menum h3 {
+  color: #6c757d;
+  font-size: 3rem;
+}
+
+/****************************/
+/********* services *********/
+/****************************/
+
+#services h2 {
+  padding-bottom: 6rem;
+}
+
+.serhead1 {
+  position: relative;
+}
+
+.serhead2 {
+  opacity: 0.1;
+  font-size: 7rem;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(60%, -73%);
+}
+
+.sercontent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.sercontent h4 {
+  font-weight: 500;
+}
+
+.sercontent {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.ser {
+  width: 25rem;
+}
+
+.ser h4 {
+  padding: 0rem 1rem;
+  font-size: 1.3rem;
+}
+
+.ser p {
+  padding: 1;
+}
+
+/****************************/
+/********* summary **********/
+/****************************/
+
+.sumhead1 {
+  position: relative;
+}
+
+.sumhead2 {
+  opacity: 0.1;
+  font-size: 7rem;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(50%, -66%);
+}
+
+.summarycontent {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 3rem;
+}
+
+.summarycontent h2 {
+  padding: 0;
+  text-align: left;
+}
+
+.summarycontent h4 {
+  padding: 0rem 0.6rem;
+  font-size: 1.3rem;
+}
+
+.summarycontent p {
+  padding: 0rem 0.6rem;
+}
+
+.summarycont1 h2 {
+  padding: 0rem 1rem;
+  border-radius: 0.3rem;
+}
+
+.sum {
+  border: 0.01rem solid #dee2e6;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 0.3rem;
+}
+
+.summarycont1 {
+  padding: 0rem 1rem 1rem 1rem;
+}
+
+.sumdate {
+  font-size: 0.9rem;
+  margin: 1rem 0.3rem;
+  padding: 0 0.6rem;
+  border-radius: 0.3rem;
+  color: white;
+  background-color: #20c997;
+  display: inline-block;
+}
+
+.summarycontent .sumtitle {
+  color: #dc3545;
+  padding: 2rem 0.6rem;
+}
+
+.button {
+  text-align: center;
+  margin-top: 1.9rem;
+}
+
+#summary a {
+  margin-top: 3rem;
+  color: #6c757d;
+  border-radius: 5rem;
+  padding: 1rem 2.5rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: #6c757d solid 0.2rem;
+}
+
+#summary a:hover {
+  color: white;
+  background-color: #6c757d;
+}
+
+.allkills {
+  margin: auto;
+  width: 90%;
+}
+
+.allkills .skills {
+  text-align: left;
+  padding: 0;
+}
+
+.all {
+  display: flex;
+  justify-content: space-between;
+}
+
+.web,
+.html,
+.java,
+.react,
+.angular,
+.bootstrap {
+  position: relative;
+  width: 30rem;
+  margin: 2rem 0rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.all p {
+  padding: 2rem 0rem;
+}
+
+/****************************/
+/******** portfolio *********/
+/****************************/
+
+.porthead1 {
+  position: relative;
+}
+
+.porthead2 {
+  opacity: 0.1;
+  font-size: 7rem;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(45%, -66%);
+}
+
+#portfolio ul {
+  width: 28rem;
+  display: flex;
+  margin: 3rem auto;
+  justify-content: center;
+}
+
+#portfolio li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 1rem;
+}
+
+#portfolio a {
+  transition: 0.2s ease all;
+  cursor: pointer;
+  color: black;
+}
+
+#portfolio a:hover {
+  color: #20c997;
+}
+
+.portimg {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+
+.portimgs {
+  width: calc(95% / 3);
+}
+
+.portimgs img {
+  margin-top: 1rem;
+  border-radius: 0.3rem;
+  width: 100%;
+  transition: all ease 0.3s;
+}
+
+.portimg img:hover {
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  width: 100%;
+  overflow: hidden;
+  transform: scale(1);
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+/****************************/
+/******* testimonial ********/
+/****************************/
+
+.testhead1 {
+  position: relative;
+}
+
+.testhead2 {
+  opacity: 0.1;
+  font-size: 7rem;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(31%, -66%);
+}
+
+.client {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  margin: auto;
+}
+
+.clientpart {
+  width: 34rem;
+  padding: 3rem;
+  background-color: #f8f9fa;
+  margin: 1rem;
+  border-radius: 0.2rem;
+}
+
+.clientheadpart {
+  display: flex;
+}
+
+.clientheadpart1 h5 {
+  padding: 0 1rem;
+}
+
+.clientheadpart1 p {
+  color: #4c4d4da9;
+  font-size: small;
+  font-weight: 600;
+}
+
+.clientheadpart1 img {
+  border-radius: 50%;
+  width: 80%;
+}
+
+.clientfootpart p {
+  font-weight: 500;
+}
+
+/****************************/
+/* ------- contact -------- */
+/****************************/
+
+#contact {
+}
+
+.conthead1 {
+  position: relative;
+}
+
+.conthead2 {
+  opacity: 0.1;
+  font-size: 7rem;
+  position: absolute;
+  text-transform: uppercase;
+  transform: translate(49%, -83%);
+}
+
+.contactcontent {
+  width: 80%;
+  margin: auto;
+  display: flex;
+}
+
+#contact h2 {
+  margin: 0 2rem 2rem 2rem;
+}
+
+.info {
+  width: 20%;
+}
+
+.info h3 {
+  padding: 1rem 1rem 1rem 0;
+  text-align: left;
+}
+
+.info p {
+  padding: 0.5rem 0.5rem 0.5rem 0;
+}
+
+.note h3 {
+  padding: 1rem 1rem 1rem 0;
+  text-align: left;
+}
+
+.note input {
+  padding: 1rem;
+  margin: 0.8rem;
+  color: #666464;
+  border-radius: 0.4rem;
+  border: 0.1rem solid rgba(0, 0, 0, 0.201);
+}
+
+.note1 {
+  display: flex;
+}
+
+.note1 input {
+  padding-left: 0.5rem;
+  width: 20rem;
+}
+
+.note2 input {
+  width: 41.6rem;
+  height: auto;
+}
+
+.note button {
+  border: 0;
+  margin: 1rem auto;
+  color: white;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 6rem;
+  padding: 0.8rem 2rem;
+  transition: all 0.9s ease;
+  background-color: #20c997;
+}
+
+.divbutton {
+  text-align: center;
+}
+
+.note button:hover {
+  box-shadow: 0rem 0rem 0.5rem #555;
+  background-color: #1baa80;
+}
+/* footer */
+
+#footerdiv {
+  font-size: 0.8rem;
+  padding: 4rem 5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+#footerdiv a {
+  color: #20c997;
+  transition: 0.5s ease all;
+}
+
+#footerdiv a:hover {
+  color: #1b9f78;
+}
+
+#footerdiv .footlast a {
+  color: rgb(0, 0, 0);
+}
+
+#footerdiv a:hover {
+  color: #1b9f78;
+}
+
+.footend {
+  position: relative;
+  padding-left: 0.3rem;
+}
+
+/* ------------------------ */
+/* --- before and after --- */
+/* ------------------------ */
+
+#home h1::after {
+  content: "";
+}
+
+.abouthead2::after {
+  content: "";
+  position: absolute;
+  width: 6.1rem;
+  height: 0.2rem;
+  top: 55%;
+  right: 46%;
+  background: #20c997;
+}
+
+.serhead1::after {
+  content: "";
+  position: absolute;
+  width: 6.1rem;
+  height: 0.2rem;
+  top: 30%;
+  right: 46%;
+  background: #20c997;
+}
+
+.sumhead1::after {
+  content: "";
+  position: absolute;
+  width: 6.1rem;
+  height: 0.2rem;
+  top: 55%;
+  right: 46%;
+  background: #20c997;
+}
+
+.web::before {
+  position: absolute;
+  content: "";
+  width: 65%;
+  height: 0.5rem;
+  bottom: 0;
+  border-radius: 1rem;
+  background-color: #20c997;
+  z-index: 1;
+}
+
+.web::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #dee2e6;
+}
+
+.html::before {
+  position: absolute;
+  content: "";
+  width: 95%;
+  height: 0.5rem;
+  bottom: 0;
+  border-radius: 1rem;
+  background-color: #20c997;
+  z-index: 1;
+}
+
+.html::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #dee2e6;
+}
+
+.java::before {
+  position: absolute;
+  content: "";
+  width: 80%;
+  height: 0.5rem;
+  bottom: 0;
+  border-radius: 1rem;
+  background-color: #20c997;
+  z-index: 1;
+}
+
+.java::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #dee2e6;
+}
+
+.react::before {
+  position: absolute;
+  content: "";
+  width: 70%;
+  height: 0.5rem;
+  bottom: 0;
+  border-radius: 1rem;
+  background-color: #20c997;
+  z-index: 1;
+}
+
+.react::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #dee2e6;
+}
+
+.angular::before {
+  position: absolute;
+  content: "";
+  width: 60%;
+  height: 0.5rem;
+  bottom: 0;
+  border-radius: 1rem;
+  background-color: #20c997;
+  z-index: 1;
+}
+
+.angular::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #dee2e6;
+}
+
+.bootstrap::before {
+  position: absolute;
+  content: "";
+  width: 99%;
+  height: 0.5rem;
+  bottom: 0;
+  border-radius: 1rem;
+  background-color: #20c997;
+  z-index: 1;
+}
+
+.bootstrap::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  bottom: 0;
+  height: 0.5rem;
+  border-radius: 1rem;
+  background-color: #dee2e6;
+}
+
+.porthead1::after {
+  content: "";
+  position: absolute;
+  width: 6.1rem;
+  height: 0.2rem;
+  top: 55%;
+  right: 46%;
+  background: #20c997;
+}
+
+.testhead1::after {
+  content: "";
+  position: absolute;
+  width: 6.1rem;
+  height: 0.2rem;
+  top: 55%;
+  right: 46%;
+  background: #20c997;
+}
+
+.conthead1::after {
+  content: "";
+  position: absolute;
+  width: 6.1rem;
+  height: 0.2rem;
+  top: 55%;
+  right: 46%;
+  background: #20c997;
+}
+
+.footend::after {
+  content: " ";
+  width: 1px;
+  height: 14px;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  display: block;
+  transform: translateY(-7px);
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+/****************************/
+/* ------ animations -------*/
+/****************************/
+
+@keyframes typing {
+  0% {
+    content: "I am Simone Olivia.|";
+  }
+
+  0% {
+    content: "I am Designer.|";
+  }
+
+  0% {
+    content: "I am P|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+  0% {
+    content: "I am Photographer.|";
+  }
+}
